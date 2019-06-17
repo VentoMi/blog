@@ -1,0 +1,275 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*
+
+		Finish
+
+*/
+:root {
+    --brown: #643416;
+}
+.marg-top{
+	margin-top: 15px;
+} 
+.hidden{
+	display: hidden;
+	position: absolute;
+	text-indent: -9999px;
+}
+.body {
+	font-size: 16px;
+	margin:0 30%;
+}
+body {
+	font-size: 16px;
+}
+.div__navigation{
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	background-color: var(--brown);
+	align-items: center;
+	padding: 20px 0; 
+	z-index: 2;
+}
+.link{
+	margin-left: 10px;
+}
+.submit{
+	margin-top: 50px;
+}
+.add_article{
+	width: 100%;
+	display: block;
+	padding: 10px;
+	margin: -10px;
+}
+nav{
+	display: flex;
+	justify-content: center;
+}
+.nav__item{
+	display: inline;
+}
+.nav__item a{
+	color: white;
+	text-decoration: none;
+	margin:0 10px;
+}
+.nav__item a:hover{
+	color: #39AFB3;
+	transition-duration: 0.3s;
+}
+.logo{
+
+	background-image: url(../img/logo.png);
+	background-size: 100%;
+	background-position: center;
+	width: 30px;
+	height: 30px;
+}
+
+
+
+
+.section__dinosaure, footer{
+	text-align: center;
+}
+.img__dinosaure{
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+.title__about{
+	margin-top: 100px;
+	margin-left: 0;
+}
+.about{
+	margin: 0 20%;
+}
+h1{
+	font-size: 2em;
+	font-weight: bold;
+}
+h2{
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.div__all p{
+	margin: 20px 0 60px;
+}
+.bas{
+	margin-top: 50px;
+	padding: 10px;
+	text-align: center;
+	border:1px solid black;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+
+
+.form__dinosaure{
+	margin:100px 0 50px;
+	padding:10px;
+}
+.fieldset__dinosaure{
+	display: flex;
+	flex-direction: column;
+min-width: 0;
+background-color: #fff;
+background-clip: border-box;
+border: 1px solid rgba(0,0,0,.125);
+border-radius: .25rem;
+}
+.textarea__dinosaure{
+	border-radius: 5px;
+	border: 1px solid grey;
+	width: 96.5%;
+	margin-left: 1.5%;
+	margin-top: 10px;
+}
+.label__dinosaure{
+	background-color: rgba(0,0,0,.03);
+	padding: 10px;
+}
+
+input:hover{
+	color: white;
+	background-color: var(--brown);
+	transition:0.4s;
+}
+.paragraph__comment{
+	margin-left: 30px !important;
+}
+.column{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+.column label{
+	padding: 10px;
+}
+.column input{
+	margin-bottom: 50px;
+	padding: 10px;
+}
+.column input:hover,.flex input{
+	background-color: inherit;
+	transition: inherit;
+	color:inherit;
+
+}
+h2{
+	margin-left: 10px;
+}
+input{
+	margin: 10px;
+	padding: 10px 0;
+	background: white;
+	border:1px solid grey;
+	border-radius: 10px;
+	padding-left: 5px;
+}
+.grid{
+	display: grid;
+grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+grid-template-rows: repeat(auto-fit,minmax(100px, 1fr));
+
+justify-items: center;
+align-items: center;
+}
+.flex{
+	display: flex;
+	flex-direction: column;
+	justify-self:baseline;
+	width: 100%;
+}
+.flex label{
+	padding:0 10px;
+}
+.inscription{
+	display: grid;
+	grid-template-columns: repeat(1,minmax(200px, 1fr));
+}
+
+ul .list:nth-child(1), ul .list:nth-child(2){
+	margin-bottom: 30px;
+}
+.h2_form{
+	margin-top: 100px;
+}
+.form_commentaire input{
+	margin: 10px 0;
+	width: 100%;
+}
+.form_commentaire input:nth-child(1){
+	width: 99.1%;
+}
+textarea{
+	height: 150px;
+	width: 98.2%;
+	padding: .7%;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+
+
+footer{
+	background-color: var(--brown);
+	padding:20px 0;
+	color: white;
+	margin:inherit;
+	margin-top: 100px;
+}
+
