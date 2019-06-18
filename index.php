@@ -1,5 +1,5 @@
 <?php
-	require 'controllers/connection.php';
+	$bdd = new PDO("mysql:host=127.0.0.1;dbname=articles", "root", "");
 	$articles = $bdd->query('SELECT * FROM articles ORDER BY date_time_publication DESC');
 ?>
 <!DOCTYPE html>
@@ -24,7 +24,7 @@
 					<a href="index.php">Home</a>
 				</li>
 				<li class="nav__item">
-					<a href="sign-in.php">Connexion / inscription</a>
+					<a href="./views/sign-in.views.php">Connexion / inscription</a>
 				</li>
 			</ul>
 		</nav>

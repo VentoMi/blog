@@ -1,5 +1,5 @@
 <?php
-  require 'controllers/se-connecter.php';
+  include '../controllers/se-connecter.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -8,7 +8,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Connexion blog</title>
 </head>
 <body class="body">
@@ -29,8 +29,8 @@
                        </div>
                    <input class="submit" type="submit" name="formconnexion" value="Se connecter !" />
                    <div class="flex link">
-                        <a href="index.php">Retourner à la page d'accueil</a>
-                        <a href="sign-in.php">Je veux m'inscrire</a>
+                        <a href="../index.php">Retourner à la page d'accueil</a>
+                        <a href="sign-in.views.php">Je veux m'inscrire</a>
                     </div>
                </form>
                <?php

@@ -1,6 +1,5 @@
 <?php
-require'../views/sign-in.views.php';
-require 'Connection.php';
+$bdd = new PDO("mysql:host=localhost;dbname=user18", "user18", "fK63_WVd");
 
 if(isset($_POST['forminscription'])) {
     $pseudo = htmlspecialchars($_POST['pseudo']);

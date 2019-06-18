@@ -1,6 +1,5 @@
 <?php
-require'../views/redaction.view.php';
-    require 'Connection.php';
+$bdd = new PDO("mysql:host=localhost;dbname=user18", "user18", "fK63_WVd");
     $mode_edition = 0;
     if(isset($_GET['edit']) AND !empty($_GET['edit'])) {
         $mode_edition = 1;
@@ -25,7 +24,7 @@ require'../views/redaction.view.php';
             } else {
                 $update = $bdd->prepare('UPDATE articles SET titre = ?, contenu = ?, date_time_edition = NOW() WHERE id = ?');
                 $update->execute(array($article_titre, $article_contenu, $edit_id));
-                header('Location: http://hepl01.cblue.be/~user18/index-co.php?id=[?]');
+                header("Location: ../views/index-co.views.php?id=".$_SESSION['id']);
                 $message = 'Votre article a bien été mis à jour !';
             }
         } else {

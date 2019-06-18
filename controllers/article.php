@@ -1,6 +1,6 @@
 <?php
-require'../views/article.view.php';
-    require 'Connection.php';
+
+    $bdd = new PDO("mysql:host=localhost;dbname=user18", "user18", "fK63_WVd");
     if(isset($_GET['id']) AND !empty($_GET['id'])) {
         $get_id = htmlspecialchars($_GET['id']);
         $article = $bdd->prepare('SELECT * FROM articles WHERE id = ?');

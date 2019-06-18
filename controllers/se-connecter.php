@@ -1,7 +1,5 @@
 <?php
-    session_start();
-    require'../views/sing-up.views.php';
-    require 'Connection.php'
+    $bdd = new PDO("mysql:host=localhost;dbname=user18", "user18", "fK63_WVd");
     
     if(isset($_POST['formconnexion'])) {
         $mailconnect = htmlspecialchars($_POST['mailconnect']);
@@ -15,7 +13,7 @@
                 $_SESSION['id'] = $userinfo['id'];
                 $_SESSION['pseudo'] = $userinfo['pseudo'];
                 $_SESSION['mail'] = $userinfo['mail'];
-                header("Location: index-co.php?id=".$_SESSION['id']);
+                header("Location: ../views/index-co.views.php?id=".$_SESSION['id']);
             } else {
                 $erreur = "Mauvais mail ou mot de passe !";
             }

@@ -4,6 +4,6 @@ if(isset($_GET['id']) AND !empty($_GET['id'])) {
     $suppr_id = htmlspecialchars($_GET['id']);
     $suppr = $bdd->prepare('DELETE FROM articles WHERE id = ?');
     $suppr->execute(array($suppr_id));
-    header('Location: http://blog.localhost/index-co.php?id=9');
+    header("Location: ../views/index-co.views.php?id=".$_SESSION['id']);
 }
 ?>

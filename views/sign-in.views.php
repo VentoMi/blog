@@ -1,5 +1,5 @@
 <?php
-    require 'controllers/inscription.php';
+    include '../controllers/inscription.php';
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Inscription blog</title>
 </head>
 <body class="body">
@@ -39,8 +39,8 @@
                     </div>
                     <input class="submit" type="submit" name="forminscription" value="Je m'inscris" />
                     <div class="flex link">
-                        <a href="index.php">Retourner à la page d'accueil</a>
-                        <a href="sing-up.php">J'ai déja un compte</a>
+                        <a href="../index.php">Retourner à la page d'accueil</a>
+                        <a href="sign-up.views.php">J'ai déja un compte</a>
                     </div>
                 </form>
             </section>
